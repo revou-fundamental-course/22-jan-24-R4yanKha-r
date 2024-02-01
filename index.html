@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rayan Programing</title>
+  <link rel="stylesheet" href="/22-jan-24-RayanKhairullah/CSS/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+  <header>
+    <a href="" class="logo"><i class="ri-home-heart-fill"></i><span>RayanHome.</span></a>
+
+    <ul class="navbar">
+      <li><a href="#Home" class="active">Home</a></li>
+      <li><a href="#Our">Our Package</a></li>
+      <li><a href="#Call">Call Us</a></li>
+    </ul>
+  
+    <div class="main">
+      <a href="#" class="user"><i class="ri-user-fill"></i>Sign in</a>
+      <a href="#">Register</a>
+      <div class="bx bx-menu" id="menu-icon"></div>  <!-- untuk icon menu 3 garis horizontal -->
+    </div>
+  </header>
+
+  <div class="judul">
+    <h1>Top Rated E-Groceries Shop in Indonesian</h1>
+    <p>Every Day with  best ingredients</p>
+  </div>
+  
+  <div class="wrapper">
+    <!-- untuk Home -->
+    <section id="Home">
+      <div class="slider-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="/22-jan-24-RayanKhairullah/Asset/teh.jpg" alt="Image 1">
+            </div>
+            <div class="slide">
+                <img src="/22-jan-24-RayanKhairullah/Asset/lemon.jpg" alt="Image 2">
+            </div>
+            <div class="slide">
+                <img src="/22-jan-24-RayanKhairullah/Asset/padi.jpg" alt="Image 3">
+            </div>
+            <div class="slide">
+                <img src="/22-jan-24-RayanKhairullah/Asset/kopi.jpg" alt="Image 4">
+            </div>
+          </div>
+          <p>Learn Programming #dirumahaja</p>
+
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+      <div class="kolom">
+        <p class="deskrisi">Learn Programming #dirumahaja</p>
+        <h2>Tetap Sehat, Tetap Semangat</h2>
+        <p>Tanaman tropis terkenal dengan keindahannya yang luar biasa. Bentuk, warna, dan teksturnya yang beragam memberikan nuansa eksotis dan menarik. Keindahan ini melambangkan kekayaan alam dan keanekaragaman hayati di wilayah tropis</p>
+        <p><a href="" class="Btn-Pink">Pelajari Lebih Lanjut</a></p>
+      </div>
+    </section>
+
+    <!-- untuk Conatct -->
+    <section id="Call">
+      <img src="/22-jan-24-RayanKhairullah/Asset/ilustrasi-Programer.jpg" alt="Home"/>
+      <div class="kolom">
+        <p class="deskrisi"> You Need Will This</p>
+        <h2>Tetap Sehat, Tetap Semangat</h2>
+        <div class="Form">
+          <h2>Contact Us</h2>
+        <form id="myForm">
+          <label for="name">Name :</label>
+          <input type="text" id="name" name="name" required placeholder="InputName">
+          <br>
+          <label for="email">Email  :</label>
+          <input type="email" id="email" name="email" required placeholder="InputEmail"> 
+          <br>
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" maxlength="2" required  placeholder="UmurMU">
+          <br>
+          <label for="interest">Select Interest:</label>
+          <select id="interest" name="interest" required >
+              <option value="" disabled selected>-- your position --</option>
+              <option value="option1">software engineer</option>
+              <option value="option2">Digital marketing</option>
+              <option value="option3">Data analyst</option>
+          </select>
+          <br><br>
+          <button type="button" onclick="validateForm()" class="Tombol">Send</button>
+  
+          <div id="errorMessages" class="error-message"></div>
+        </div>
+      </form>
+      <p><a href="" class="Btn-Blue">Pelajari lebih lanjut</a></p>
+      </div>
+    </section>
+
+    <!-- untuk tutors -->
+    <section id="Our">
+      <div class="center">
+        <div class="kolom">
+          <p class="deskripsi">Our Top Tutors</p>
+          <h2>Tutors Coding</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, molestiae!</p>
+        </div>
+
+        <div class="galery-partnersList">
+          <div class="card-partners">
+            <img src="/22-jan-24-RayanKhairullah/Asset/shadika galih.jpeg" alt="partners">
+            <p>Shandikah Galih</p>
+          </div>
+          <div class="card-partners">
+            <img src="/22-jan-24-RayanKhairullah/Asset/dea afrizal.jpg" alt="partners">
+            <p>Dhea Afrizal</p>
+          </div>
+          <div class="card-partners">
+            <img src="/22-jan-24-RayanKhairullah/Asset/revou.png" alt="partners">
+            <p>RevoU</p>
+          </div>
+          <div class="card-partners">
+            <img src="/22-jan-24-RayanKhairullah/Asset/dicoding.jpeg" alt="partners">
+            <p>DiCoding</p>
+          </div>
+          <div class="card-partners">
+            <img src="/22-jan-24-RayanKhairullah/Asset/myskill.jpeg" alt="partners">
+            <p>MySkill</p>
+          </div>
+      </div>
+    </section>
+
+    <div id="contact">
+      <div class="wrapper">
+        <div class="footer">
+          <div class="footer-section">
+            <h3>HomeRayan.</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, quas!</p>
+          </div>
+          <div class="footer-section">
+            <h3>Obout</h3>
+            <p>Hi, I am a grade X student, who is still actively attending SMKN 1 Kota Bengkulu.</p>
+          </div>
+          <div class="footer-section">
+            <h3>Contact</h3>
+            <p>ex:Jln. I.G. Ngurah Rai Kel/Ds. Klender Kec. Duren Sawit - Jakarta Timur DKI Jakarta</p>
+            <p>kode pos: 45678</p>
+          </div>
+          <div class="footer-section">
+            <h3>Social</h3>
+            <p><b>Istragram: </b>@rayankhairullah</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div id="copyright">
+      <div class="wrapper">
+        &copy; 11/09/2023. <b>HomeRayan.</b> All Rights Reseverd.
+      </div>
+    </div>
+  </div>
+  <script src="/22-jan-24-RayanKhairullah/JS/script.js"></script>
+</body>
+</html>

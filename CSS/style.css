@@ -1,0 +1,313 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+:root { /* kata kunci biar ga susah" nulis */
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
+body {
+  /* untuk memastikan */
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  color: #527853;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 12px 10%;
+  transition: all .50s ease;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 3px;
+}
+.logo span{
+  color: #527853;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.navbar {
+  display: flex;
+}
+.navbar a{
+  color: #527853;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0px;
+  margin: 0px 30px;
+  transition: all .50s ease;
+}
+.navbar a:hover{
+  color: var(--main-color);
+}
+.navbar a.active {
+  color: var(--main-color);
+}
+.slider-container {
+  max-width: 550px;
+  margin: 30px 50px 0px 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  border-radius: 5px 40px 5px 40px;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.prev, .next {
+  border-radius: 5px;
+  position: absolute;
+  top: 44%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: white;
+  background-color: gray;
+  padding: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+}
+.judul{
+  margin-top: 70px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main a{
+  margin-right: 25px;
+  margin-left: 10px;
+  color: #527853;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover{
+  color: var(--main-color);
+}
+#menu-icon{
+  font-size: 35px;
+  color: #527853;
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+.wrapper {
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+section {
+  margin: auto;
+  display: flex;
+  margin-bottom: 50px;
+}
+.kolom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.Form{
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 60px 60px 0px 50px;
+  margin-bottom: 15px;
+  padding: 40px;
+}
+.deskrisi{
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'comic sans ms';
+  color: #527853;
+}
+h2{
+  font-family: 'comic sans ms';
+  font-weight: 800px;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #527853;
+  width: 100%;
+  line-height: 50px;
+}
+a.Btn-Blue {
+  background: #83A2FF;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #527853;
+  cursor: pointer;
+  font-weight: bold;
+}
+a.Btn-Blue:hover{
+  background: #ED9ED6;
+  text-decoration: none;
+}
+a.Btn-Pink {
+  background: #ED9ED6;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 15px 20px 15px 20px;
+  color: #527853;
+  cursor: pointer;
+  font-weight: bold;
+}
+a.Btn-Pink:hover{
+  background: #83A2FF;
+  text-decoration: none;
+}
+p{
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.center {
+  text-align: center;
+  width: 100%;
+}
+.galery-tutorsList {
+  width: 100%;
+  position: relative;
+  display: flex; /*agar berbentuk seperti kolom-kolom */
+  flex-wrap: wrap; /*agar tidak jadi satu baris*/
+}
+.card-tutor {
+  width: 20%;
+  margin: 0 auto;
+}
+.galery-partnersList {
+  width: 100%;
+  position: relative;
+  display: flex; /*agar berbentuk seperti kolom-kolom */
+  flex-wrap: wrap; /*agar tidak jadi satu baris*/
+}
+.card-partners {
+  width: 20%;
+  margin: 0 auto;
+}
+.card-partners img {
+  width: 150px; /*relative ukuran div parentnya*/
+  border-radius: 50%;
+}
+#contact {
+  background: #dedede;
+  padding: 50px 0px 50px 0px; /*atas kiri bawah kanan*/
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+.footer-section {
+  width: 20%;
+  margin: 0 auto;
+}
+h3 {
+  font-family: 'comic sans ms';
+  font-weight: 800;
+  font-size: 30px;
+  margin-bottom: 30px; /*jeda dibawah*/
+  color: #527853;
+  width: 100%;
+  line-height: 50px;
+}
+
+#copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0px 50px 0px;
+  margin-top: 50px;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+/* Mengatur agar web responsif */
+@media screen and (max-width: 991.98px) {
+  .wrapper {
+    width: 90%;
+  }
+  .logo a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  nav .menu {
+    width: 100%;
+    margin: 0;
+  }
+  nav .menu ul {
+    text-align: center;
+    margin: auto;
+    line-height: 60px;
+  }
+  nav .menu ul li {
+    display: inline-block;
+    float: none;
+  }
+  section {
+    display: block;
+  }
+  section img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .card-tutor {
+    width: 50%;
+  }
+  .card-partners {
+    width: 50%;
+  }
+
+}
